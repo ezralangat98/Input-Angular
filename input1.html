@@ -1,0 +1,23 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Testing</title>
+        <script src="C:\Users\Student2\Desktop\EL\UI\JavaScript\Angular\angular.min.js"></script>
+
+
+        </head>
+    <body>
+        <div ng-app ng-init="Cost = 20;Qty = 10"> 
+            <b>Calc</b>>
+            <div>
+                Quantity: <input type="number" min="5" ng-model=Qty>
+            </div>
+            <div>
+                Costs: <input type="number" min="10" ng-model=Cost>
+            </div>
+            <div>
+               <b> Total:</b> {{Cost * Qty | currency}}
+            </div>
+        </div>
+    </body>
+</html>
